@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Unlist</string>
+    <string name="login">Login</string>
+    <string name="userName">User Name</string>
+    <string name="register">Register</string>
+    <string name="enter_the_password">Enter The Password</string>
+    <string name="enter_name">Enter Name</string>
 </resources>
