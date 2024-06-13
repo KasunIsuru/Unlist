@@ -11,10 +11,12 @@
         android:id="@+id/imageView2"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginBottom="528dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/unlist__1_" />
 
     <TextView
@@ -23,9 +25,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="152dp"
+        android:layout_marginEnd="18dp"
         android:text="@string/login"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,70 +37,77 @@
         android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/enter_name"
         android:inputType="text"
         android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/enter_the_password"
         android:inputType="text"
         android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/userName"
         app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginTop="43dp"
+        android:backgroundTint="#FFFFFF"
         android:text="@string/login"
+        android:textColor="#19303A"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="116dp"
         android:text="Don’t have an account ?"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/regiviewBtn" />
 
     <Button
         android:id="@+id/regiviewBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="56dp"
-        android:background="#19303A"
+        android:layout_marginEnd="72dp"
+        android:backgroundTint="#19303A"
         android:text="@string/register"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <View
         android:id="@+id/divider"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="200dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="#FFFFFF"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/password" />
 </androidx.constraintlayout.widget.ConstraintLayout>
